@@ -13,13 +13,13 @@ public class Example1 {
 		FileInputStream fin = new FileInputStream(src);
 		XSSFWorkbook wb = new XSSFWorkbook(fin);
 		XSSFSheet sheet1 = wb.getSheetAt(0);
-		String data0 = sheet1.getRow(0).getCell(0).getStringCellValue();
-		System.out.println("Data from excel is " +data0);
-		String data1 = sheet1.getRow(0).getCell(1).getStringCellValue();
-		System.out.println("Data from excel is "+data1);
-		wb.close();
-		 
-		
+		String data0 = sheet1.getRow(0).getCell(1).getStringCellValue();
+		System.out.println("Data from excel is " + data0);
+		String data1 = sheet1.getRow(0).getCell(4).getStringCellValue();
+		System.out.println("Data from excel is " + data1);
+		String data2 = sheet1.getRow(0).getCell(7).getStringCellValue();
+		System.out.println("Email of Abc company : " + data2);
+        wb.close();
 
 	}
 

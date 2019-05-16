@@ -21,7 +21,7 @@ public class Example3 {
 			for(int j =0;j<=1;j++) {
 		
 			String data1 = sheet1.getRow(i).getCell( j).getStringCellValue();
-			System.out.print(data1+" ");
+			System.out.println(data1+" ");
 			
 		}
 			
